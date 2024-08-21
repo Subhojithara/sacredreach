@@ -1,0 +1,31 @@
+.scrollContainer {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.scrollContent {
+  display: flex;
+  width: 600%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left:65px;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    width: 50%; /* Adjust this for smaller screens */
+    padding-left:20px;
+    display: grid;
+  }
+}
