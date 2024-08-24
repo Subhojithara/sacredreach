@@ -11,6 +11,8 @@ import ValueProp from '@/components/home/ValueProp'
 import Aboutus from '@/components/home/Aboutus'
 import OurGoal from '@/components/home/OurGoal'
 import SvgProses from '@/components/home/SvgProses'
+import FAQSection from '@/components/home/FAQSection';
+import ChatBotIframe from '@/components/ChatBotIframe';
 
 const Home = () => {
   return (
@@ -27,7 +29,9 @@ const Home = () => {
       <ValueProp />
       <Aboutus />
       <OurGoal />
+      <FAQSection />
       <SvgProses />
+      
     </div>
   );
 };
