@@ -81,13 +81,13 @@ const OurGoal = () => {
       </div>
       <div className="flex flex-wrap justify-center w-full space-y-8 lg:space-y-0 lg:space-x-8">
         <div ref={oldWayRef} className="relative w-full max-w-xl p-4 md:p-8 border border-black bg-white shadow-lg rounded-lg transform">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">The Old Way:</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">👴 The Old Way:</h2>
           <ul className="list-disc pl-4 space-y-2 text-sm md:text-lg">
             {renderList(oldWayPoints)}
           </ul>
         </div>
         <div ref={newWayRef} className="relative w-full max-w-xl p-4 md:p-8 border border-black bg-white shadow-lg rounded-lg transform">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">The New Way:</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">👦 The New Way:</h2>
           <ul className="list-disc pl-4 space-y-2 text-sm md:text-lg">
             {renderList(newWayPoints)}
           </ul>

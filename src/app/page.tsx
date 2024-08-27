@@ -13,6 +13,7 @@ import OurGoal from '@/components/home/OurGoal'
 import SvgProses from '@/components/home/SvgProses'
 import FAQSection from '@/components/home/FAQSection';
 import ChatBotIframe from '@/components/ChatBotIframe';
+import Conclusion from '@/components/home/Conclusion';
 
 const Home = () => {
   return (
@@ -29,9 +30,9 @@ const Home = () => {
       <ValueProp />
       <Aboutus />
       <OurGoal />
-      <FAQSection />
       <SvgProses />
-      
+      <FAQSection />
+      <Conclusion />
     </div>
   );
 };

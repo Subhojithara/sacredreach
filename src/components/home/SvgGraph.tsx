@@ -96,8 +96,8 @@ const SvgGraph: React.FC = () => {
     return (
         <div className="h-screen flex items-center justify-center relative px-4">
             <div className="absolute left-10 top-1/4 text-white max-w-[90%] lg:max-w-none">
-                <h1 className="title text-3xl lg:text-4xl font-bold mb-4">Tech Giants Overview</h1>
-                <p className="description text-base lg:text-xl">This graph visualizes the trajectory and influence of major technology companies over time.</p>
+                <h1 className="title text-3xl lg:text-4xl font-bold mb-4 uppercase">Graph showing new emerging brands.</h1>
+                <p className="description text-base lg:text-xl">This is how quickly competition is rising.</p>
             </div>
             <svg className="w-full max-w-[1726px] h-auto" viewBox="0 0 1726 703" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="line" d="M967 393C649.5 357.5 477.833 588.333 414 689.5H1721V80C1453.15 102.315 1284.5 428.5 967 393Z" stroke="url(#paint0_linear_1_10)" strokeWidth="4" />
@@ -126,7 +126,7 @@ const SvgGraph: React.FC = () => {
                 </svg>
             </div>
             <div className="absolute bottom-36 right-20">
-                <p className="w-60 text-white">Lorem ipsum dolor sit amet.</p>
+                <p className="w-60 text-white font-black underline">learn more...</p>
             </div>
             <div className="absolute right-60 top-36 lg:right-60 lg:top-36">
                 <FaApple className="floating-logo bg-white p-2 rounded-full text-black" size={60} />

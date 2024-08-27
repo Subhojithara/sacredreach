@@ -14,46 +14,49 @@ const Process = () => {
   );
 
   return (
-    <section className={styles.process}>
-      <div className={styles.process__container}>
-        <div className="flex pb-10 justify-center items-center space-x-5">
-          <h2 className="lg:text-4xl font-medium bg-[#b9ff66] p-2">
-          <a href="/contact">
-            FAQ
-          </a>
-          </h2>
-          <p className="w-60">Step-by-Step Guide to Achieving the Business Goals</p>
-        </div>
-        <div className={styles.process__accordions}>
-          <ul className={`${styles.accordions__list} grid grid-cols-2 gap-4`}>
-            {accordionData.map((item, index) => (
-              <li
-                key={index}
-                className={`${styles.accordions__item} ${
-                  activeIndex === index ? styles.open : ''
-                }`}
-                onClick={() => toggleAccordion(index)}
-              >
-                <button
-                  className={styles.accordions__control}
-                  aria-expanded={activeIndex === index}
+    <div>
+      <section className={styles.process}>
+        <div className={styles.process__container}>
+          <div className="flex pb-10 justify-center items-center space-x-5">
+            <h2 className="lg:text-4xl font-medium bg-[#b9ff66] p-2">
+              <a href="/contact">
+                FAQ
+              </a>
+            </h2>
+            <p className="w-60">Step-by-Step Guide to Achieving the Business Goals</p>
+          </div>
+          <div className={styles.process__accordions}>
+            <ul className={`${styles.accordions__list} grid grid-cols-2 gap-4`}>
+              {accordionData.map((item, index) => (
+                <li
+                  key={index}
+                  className={`${styles.accordions__item} ${activeIndex === index ? styles.open : ''
+                    }`}
+                  onClick={() => toggleAccordion(index)}
                 >
-                  <span className={styles.accordions__number}>{item.number}</span>
-                  <span className={styles.accordions__title}>{item.title}</span>
-                  <span className={styles.accordions__icon}></span>
-                </button>
-                <div
-                  className={styles.accordions__content}
-                  aria-hidden={activeIndex !== index}
-                >
-                  <p>{item.content}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+                  <button
+                    className={styles.accordions__control}
+                    aria-expanded={activeIndex === index}
+                  >
+                    <span className={styles.accordions__number}>{item.number}</span>
+                    <span className={styles.accordions__title}>{item.title}</span>
+                    <span className={styles.accordions__icon}></span>
+                  </button>
+                  <div
+                    className={styles.accordions__content}
+                    aria-hidden={activeIndex !== index}
+                  >
+                    <p>{item.content}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+      </section>
+      <div>
       </div>
-    </section>
+    </div>
   );
 };
 
