@@ -34,8 +34,9 @@ const CardContainer = () => {
                             And now is the best time to leverage traditional marketing at it’s best.
                         </h1>
                         <p className="lg:w-[28rem] absolute bottom-8 lg:right-10 lg:text-4xl font-bold">
-                            "Everyone is focused on digital, making traditional marketing the most cost effective marketing channel specifically for B2C and D2C industry."
+                            &quot;Everyone is focused on digital, making traditional marketing the most cost effective marketing channel specifically for B2C and D2C industry.&quot;
                         </p>
+
                     </div>
 
                     <div className="card bg-green-500 h-[35rem] lg:h-[30rem] xl:h-[35rem] sticky border text-white border-gray-300 rounded-2xl top-[40px] mt-16 flex flex-col justify-center items-center px-4">
