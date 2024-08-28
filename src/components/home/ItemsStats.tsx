@@ -36,11 +36,6 @@ const projects = [
     description: "Consumer obsessed brands will experience highest engagement in the next upcoming years if their marketing, advertising and product-market fit goes all right",
     link: "https://amazon.com",
   },
-  {
-    icon: FaShoppingCart,
-    description: "India has the third-largest digital shopping base (600 million internet users and 185 million online shoppers)",
-    link: "https://stripe.com",
-  },
 ];
 
 const Line = "“Over 70% of purchases are influenced via well physical brand awareness and digital interactions from brands, consumers already know about.”"
@@ -61,7 +56,12 @@ function ItemsStats() {
       </div>
       <div className="flex justify-center items-center text-center lg:text-4xl text-xl font-normal lg:font-medium p-2 text-black">
         <div className="w-[80rem]">
-        <h1> As per Emarketer and <span className="font-['Merriweather'] lg:text-6xl text-2xl font-normal p-3 text-white bg-black hover:scale-95 duration-100">Forbes</span></h1>
+          <h1 className="text-2xl lg:text-5xl font-semibold pb-4">
+            As per Emarketer and
+            <span className="font-serif text-white lg:text-6xl text-3xl font-bold px-4 py-2 bg-black ml-2 transition-transform transform hover:scale-105 duration-200">
+              Forbes
+            </span>
+          </h1>
           <ScrollAnimatedText text={Line} />
           <ScrollAnimatedText text={Line2} />
         </div>

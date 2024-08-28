@@ -1,0 +1,85 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+}
+
+.slideTrack {
+  display: flex;
+  width: calc(250px * 14);
+  animation: scroll 60s linear infinite; // Smoother animation with a linear easing function
+
+  &:hover {
+    animation-play-state: paused; // Pause animation on hover
+  }
+
+  @media (max-width: 768px) {
+    width: calc(150px * 14); // Adjust slide width for smaller screens
+  }
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 150px; // Adjust slide width for smaller screens
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 80px; // Reduce height for smaller screens
+
+    &::before,
+    &::after {
+      width: 25px; // Adjust gradient overlay size for smaller screens
+    }
+  }
+
+  .slide {
+    height: 80px; // Adjust slide height for smaller screens
+  }
+}

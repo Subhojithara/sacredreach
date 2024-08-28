@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 const CardContainer = () => {
     return (
@@ -18,7 +17,7 @@ const CardContainer = () => {
                         </p>
                     </div>
 
-                    <div className="card bg-green-500/40 backdrop-blur-md h-[35rem] lg:h-[30rem] xl:h-[35rem] sticky border border-gray-300 rounded-2xl top-[20px] mt-16 flex justify-center items-center px-4">
+                    <div className="card bg-green-500 backdrop-blur-md h-[35rem] lg:h-[30rem] xl:h-[35rem] sticky border border-gray-300 rounded-2xl top-[20px] mt-16 flex justify-center items-center px-4">
                         <h1 className="text-8xl sm:text-2xl md:text-3xl lg:text-[12rem] font-semibold text-white text-center uppercase">
                             Why?
                         </h1>
@@ -30,13 +29,12 @@ const CardContainer = () => {
                         </h1>
                     </div>
 
-                    <div className="card bg-green-500 h-[35rem] lg:h-[30rem] sticky border text-white border-gray-300 rounded-2xl top-[40px] mt-16 flex flex-col justify-center items-center px-4">
-                        <div className="border-4 border-white lg:h-full w-96 lg:-rotate-90 rounded-2xl lg:shadow-2xl bg-white/20 backdrop-blur-sm"></div>
+                    <div className="card bg-green-500 h-[35rem] lg:h-[30rem] xl:h-[35rem] sticky border text-white border-gray-300 rounded-2xl top-[40px] mt-16 flex flex-col justify-center items-center px-4">
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl lg:text-left font-bold text-center lg:w-[46rem] absolute lg:absolute lg:left-10 top-20 lg:top-14 uppercase">
                             And now is the best time to leverage traditional marketing at it’s best.
                         </h1>
                         <p className="lg:w-[28rem] absolute bottom-8 lg:right-10 lg:text-4xl font-bold">
-                            Everyone is focused on digital, making traditional marketing the most cost effective marketing channel specifically for B2C and D2C industry.
+                            "Everyone is focused on digital, making traditional marketing the most cost effective marketing channel specifically for B2C and D2C industry."
                         </p>
                     </div>
 

@@ -1,5 +1,4 @@
 import HeroSection from '@/components/home/HeroSection';
-import LogoCarousel from '@/components/home/Logos';
 import MoreBorder from '@/components/home/Border'
 import ItemsStats from '@/components/home/ItemsStats'
 import { SplitScreen } from '@/components/home/SplitScreen'
@@ -14,12 +13,13 @@ import SvgProses from '@/components/home/SvgProses'
 import FAQSection from '@/components/home/FAQSection';
 import ChatBotIframe from '@/components/ChatBotIframe';
 import Conclusion from '@/components/home/Conclusion';
+import Slider from '@/components/home/Slider';
 
 const Home = () => {
   return (
     <div className="bg-white text-black">
       <HeroSection />
-
+      <Slider />
       <MoreBorder />
       <ItemsStats />
       <SplitScreen />
