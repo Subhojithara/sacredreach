@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="bg-white text-black">
       <HeroSection />
-      <LogoCarousel />
+
       <MoreBorder />
       <ItemsStats />
       <SplitScreen />
