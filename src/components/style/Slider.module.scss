@@ -3,17 +3,17 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-290px * 7)); // Adjusted to match the number of images and added margin
+    transform: translateX(calc(-330px * 7)); // Adjusted to match the number of images and added margin
   }
 }
 
 .slider {
-  height: 100px; // Adjusted height
+  height: 80px; // Adjusted height
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
-  padding: 15px 0; // Increased padding at the top and bottom
+  padding: 20px 0; // Increased padding at the top and bottom
   
   &::before,
   &::after {
@@ -38,7 +38,7 @@
 
 .slideTrack {
   display: flex;
-  width: calc(290px * 14); // Adjusted to account for added margin
+  width: calc(330px * 14); // Adjusted to account for added margin
   animation: scroll 30s linear infinite;
 
   &:hover {
@@ -46,14 +46,14 @@
   }
 
   @media (max-width: 768px) {
-    width: calc(170px * 14); // Adjust slide width for smaller screens
+    width: calc(190px * 14); // Adjust slide width for smaller screens
   }
 }
 
 .slide {
-  height: 80px; // Reduced height
-  width: 230px; // Reduced width
-  margin: 0 15px; // Increased margin between logos
+  height: 60px; // Reduced height
+  width: 160px; // Reduced width
+  margin: 0 25px; // Increased margin between logos
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,15 +70,15 @@
   }
 
   @media (max-width: 768px) {
-    width: 130px;
-    margin: 0 8px; // Adjusted margin for smaller screens
+    width: 100px;
+    margin: 0 12px; // Adjusted margin for smaller screens
   }
 }
 
 @media (max-width: 768px) {
   .slider {
-    height: 80px; // Adjusted height for smaller screens
-    padding: 10px 0; // Adjusted padding for smaller screens
+    height: 70px; // Adjusted height for smaller screens
+    padding: 15px 0; // Adjusted padding for smaller screens
 
     &::before,
     &::after {
@@ -87,6 +87,6 @@
   }
 
   .slide {
-    height: 60px; // Reduced height for smaller screens
+    height: 50px; // Reduced height for smaller screens
   }
 }

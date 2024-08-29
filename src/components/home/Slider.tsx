@@ -21,9 +21,9 @@ const Slider: React.FC = () => {
             <Image
               src={image.src}
               alt={image.alt}
-              width={50} // adjust width as needed
-              height={30} // adjust height as needed
-              layout="responsive" // ensures responsive behavior
+              width={40} 
+              height={20} 
+              layout="responsive"
             />
           </div>
         ))}
