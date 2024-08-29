@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar-container">
-      <div className="logo">LOGO</div>
+      <div className="logo font-black">LOGO</div>
       
       {/* Desktop Menu */}
       <nav className="desktop-menu">

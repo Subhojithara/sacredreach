@@ -11,7 +11,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-black">
         <Image
-          src="/image/editing.jpg"
+          src="/problem.webp"
           width={300}
           height={300}
           className="h-full w-full object-cover glossy"
@@ -27,7 +27,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-black">
         <Image
-          src="/image/changes.jpg"
+          src="/solution.webp"
           width={300}
           height={300}
           className="h-full w-full object-cover glossy"
