@@ -96,9 +96,6 @@ const Navbar: React.FC = () => {
         <ul className="flex flex-col items-center space-y-8 list-none">
           {[
             { text: "Home", href: "/" },
-            { text: "Our Team", href: "/our-team" },
-            { text: "Festivals", href: "/festivals" },
-            { text: "Contact", href: "/contact" },
           ].map((item, index) => (
             <li key={index} className="navbar-item opacity-0">
               <Link href={item.href}>

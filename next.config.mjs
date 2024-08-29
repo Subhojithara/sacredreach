@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
 
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+      domains: ['i.ibb.co'], // Add the domain of your image source
+    },
+  };
+  
+  export default nextConfig;
+  
