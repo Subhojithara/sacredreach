@@ -14,27 +14,27 @@ const projects = [
   {
     icon: FaShoppingCart,
     description: "India has the third-largest digital shopping base (600 million internet users and 185 million online shoppers)",
-    link: "https://stripe.com",
+    link: "",
   },
   {
     icon: AiFillSignal,
     description: "India is home to 600+ D2C brands with an estimated market size of over $66 billion in 2023",
-    link: "https://netflix.com",
+    link: "",
   },
   {
     icon: TbReceiptRupee,
     description: "In 2021, about 105 deals were invested worth $2.14B in D2C brands in India",
-    link: "https://google.com",
+    link: "",
   },
   {
     icon: LuBarChartBig,
     description: "The Indian D2C market is speculated to grow at a CAGR of 34.5% during the forecast period of 2022-2027",
-    link: "https://meta.com",
+    link: "",
   },
   {
     icon: PiHandsClappingFill,
     description: "Consumer obsessed brands will experience highest engagement in the next upcoming years if their marketing, advertising and product-market fit goes all right",
-    link: "https://amazon.com",
+    link: "",
   },
 ];
 

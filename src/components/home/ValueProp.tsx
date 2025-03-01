@@ -187,7 +187,7 @@ const ValueProp: React.FC = () => {
           </div>
           <div className="pl-10 mt-10 text-center md:text-left lg:pr-10">
             <div
-              className={`space-y-4 text-base font-semibold w-80 lg:w-[30rem] mx-auto md:mx-0 ${poppins.className}`}
+              className={`space-y-4 text-base font-semibold w-80 lg:w-[30rem] z-40 mx-auto md:mx-0 ${poppins.className}`}
             >
               <p>
                 If you’re thinking then what’s the revolutionary solution to all these problems, then I must admit there’s no revolutionary solution.

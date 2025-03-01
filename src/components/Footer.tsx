@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,39 +80,37 @@ const Footer = () => {
         </a>
       </svg>
       <div className="bg-[#0055ff] flex flex-col items-center p-5 md:flex-row md:pl-20 md:py-20">
-        
+
         <div className="flex-1">
           <h1 className="text-4xl text-white md:text-8xl lg:w-[65rem] font-black font-['Josefin Sans'] pb-10 text-center md:text-left text-reveal">
             Don&apos;t be a stranger, talk to us?
           </h1>
           <div className="relative inline-block text-lg group">
-          <div className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-            <div className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></div>
-            <div className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#0c1f40] group-hover:-rotate-180 ease"></div>
-            <div className="relative">Contact Us!</div>
+            
+            <div className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+              <div className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></div>
+              <div className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#0c1f40] group-hover:-rotate-180 ease"></div>
+              <Link href="https://tidycal.com/joyjitghosh/sacredreach">
+              <div className="relative">Contact Us!</div>
+              </Link>
+            </div>
+            <div className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></div>
           </div>
-          <div className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></div>
-        </div>
         </div>
         <div className="flex flex-col items-center md:items-start mt-10 md:mt-0">
-          <div className="flex space-x-4 text-3xl text-white text-reveal">
+          {/* <div className="flex space-x-4 text-3xl text-white text-reveal">
             <FaFacebook />
             <FaTwitter />
             <FaInstagram />
             <FaLinkedin />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="bg-[#216bff] w-full py-5 flex flex-col items-center">
         <hr className="w-11/12 md:w-9/12 mb-5 border-gray-300" />
         <div className="flex flex-col md:flex-row justify-between w-11/12 md:w-9/12 text-center md:text-left text-sm text-gray-100">
-          <div className="mb-2 md:mb-0">
-            <a href="/terms" className="hover:text-gray-200">Terms and Conditions</a>
-            {' | '}
-            <a href="/privacy" className="hover:text-gray-200">Privacy Policy</a>
-          </div>
           <div className="text-gray-200 mt-2 md:mt-0">
-            &copy; 2024 Your Company. All rights reserved.
+            &copy; 2024 sacredreach
           </div>
         </div>
       </div>

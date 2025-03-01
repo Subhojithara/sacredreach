@@ -1,17 +1,25 @@
 "use client";
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { Montserrat, Poppins } from 'next/font/google';
-import FaceComponent from '../ui/FaceComponent';
-import AnimatedText from '../ui/AnimatedText';
-const phras = "While covering everything, we missed the point of introducing ourselves. We’re the first of a kind creative traditional advertising agency in India, and we help brands like yours leverage traditional advertising at its best. We connect brands with their audience through India’s biggest festivals. Our job is to make sure your customers enjoy your advertising, remember your brand while being in the shopping mall, and connect emotionally to your brand value. We build marketing and advertising campaigns for B2C & D2C brands during the biggest festivals. We help brands attach with the positivity and happiness of Indians."
+
+const FaceComponent = dynamic(() => import('../ui/FaceComponent'), {
+  ssr: false,
+});
+
+const AnimatedText = dynamic(() => import('../ui/AnimatedText'), {
+  ssr: false,
+});
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500'] });
 
+const phras1 = "We’re the first of a kind creative traditional advertising agency in India, and we help brands like yours leverage traditional advertising at its best. We connect brands with their audience through India’s biggest festivals. Our job is to make sure your customers enjoy your advertising, remember your brand while being in the shopping mall, and connect emotionally to your brand value. We build marketing and advertising campaigns for B2C & D2C brands during the biggest festivals. We help brands attach with the positivity and happiness of Indians.";
+
 const AboutUs: React.FC = () => {
   return (
-    <div className="min-h-screen w-full p-4 md:p-8 relative overflow-hidden">
+    <div id='about' className="min-h-screen w-full p-4 md:p-8 relative overflow-hidden">
       {/* OOPS, SORRY! Section */}
       <div className="absolute w-80 lg:top-64 top-96 right-20 p-8 lg:-rotate-90 lg:text-9xl text-8xl font-black text-slate-500 lg:shadow-2xl lg:border-4 lg:rounded-3xl lg:hover:scale-110 lg:duration-700">
         <p>OOPS, SORRY!</p>
@@ -22,13 +30,17 @@ const AboutUs: React.FC = () => {
         <FaceComponent />
       </div>
 
+      <div className={`${poppins.className} lg:p-5 lg:text-lg p-2 text-slate-800 absolute lg:bottom-80 bottom-[44rem] lg:right-10 font-bold w-96`}>
+         While covering everything, we missed the point of introducing ourselves.
+      </div>
+
       {/* About Us Content */}
       <div className="lg:pt-[48rem] pt-8 lg:p-5 text-center space-y-5 lg:space-y-0">
         <h1 className={`${montserrat.className} lg:text-8xl font-black uppercase`}>
           About Us
         </h1>
         <div className={`${poppins.className} lg:p-5 lg:text-lg p-2 text-slate-800`}>
-          <AnimatedText text={phras} />
+          <AnimatedText text={phras1} />
         </div>
       </div>
     </div>

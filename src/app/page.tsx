@@ -11,9 +11,9 @@ import Aboutus from '@/components/home/Aboutus'
 import OurGoal from '@/components/home/OurGoal'
 import SvgProses from '@/components/home/SvgProses'
 import FAQSection from '@/components/home/FAQSection';
-import ChatBotIframe from '@/components/ChatBotIframe';
 import Conclusion from '@/components/home/Conclusion';
 import Slider from '@/components/home/Slider';
+import MemberSection from '@/components/home/MemberSection';
 
 const Home = () => {
   return (
@@ -29,6 +29,7 @@ const Home = () => {
       <CardContainer />
       <ValueProp />
       <Aboutus />
+      <MemberSection />
       <OurGoal />
       <SvgProses />
       <FAQSection />

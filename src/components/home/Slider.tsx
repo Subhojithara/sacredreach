@@ -1,16 +1,14 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from '@/components/style/Slider.module.scss';
 
 const Slider: React.FC = () => {
   const images = [
-    { src: 'https://i.ibb.co/3CzP5CM/samsung.png', alt: 'samsung' },
-    { src: 'https://i.ibb.co/tbpBhGL/amazon.png', alt: 'amazon' },
-    { src: 'https://i.ibb.co/stkNCnP/pngwing-com.png', alt: 'pngwing-com' },
-    { src: 'https://i.ibb.co/GFQD6Ss/puma.png', alt: 'puma' },
-    { src: 'https://i.ibb.co/kQJm5pB/zomzto.png', alt: 'zomzto' },
-    { src: 'https://i.ibb.co/tbpBhGL/amazon.png', alt: 'amazon' },
-    { src: 'https://i.ibb.co/stkNCnP/pngwing-com.png', alt: 'pngwing-com' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/Samsung.png?updatedAt=1725128706603', alt: 'samsung' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/boat.png?updatedAt=1725128711089', alt: 'boat' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/Disney+%20Hotstar.png?updatedAt=1725128715600', alt: 'Hotstar' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/Audi.png?updatedAt=1725130162165', alt: 'Audi' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/Royal%20Enfield.png?updatedAt=1725128706749', alt: 'RoyalEnfield' },
+    { src: 'https://ik.imagekit.io/5mjwfcn7d/SacredReach%20Brand%20logo/Puma1_.png?updatedAt=1725130848205', alt: 'Puma' },
   ];
 
   return (
@@ -18,12 +16,9 @@ const Slider: React.FC = () => {
       <div className={styles.slideTrack}>
         {images.concat(images).map((image, index) => (
           <div className={styles.slide} key={index}>
-            <Image
+            <img
               src={image.src}
               alt={image.alt}
-              width={40} 
-              height={20} 
-              layout="responsive"
             />
           </div>
         ))}

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import UiButton from "../ui/Button";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function MarketingComparison() {
@@ -119,12 +120,7 @@ export default function MarketingComparison() {
 
       {/* Call to Action */}
       <div className="justify-center items-center flex pt-12">
-        <a
-          href="/contact"
-          className="absolute border-2 rounded-xl bg-gradient-to-r from-lime-400 to-green-500 py-4 px-10 z-10 text-xl border-black/40 text-white font-semibold hover:scale-105 transform duration-500 shadow-lg"
-        >
-          Contact Us
-        </a>
+      <UiButton text={'contact us'} />
       </div>
     </div>
   );

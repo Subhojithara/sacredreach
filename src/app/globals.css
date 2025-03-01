@@ -306,7 +306,7 @@ body {
   position: fixed;
   top: 16px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0); /* Initially in place */
   width: 91.666667%;
   max-width: 80%;
   background: rgba(255, 255, 255, 0.2);
@@ -318,19 +318,23 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+.navbar-container.hidden {
+  transform: translate(-50%, -150%); /* Moves the navbar further up */
+}
+
+.navbar-container.visible {
+  transform: translate(-50%, 0); /* Moves the navbar back into view */
+}
+
+/* Hover Effect to Lift Navbar Slightly */
 .navbar-container:hover {
-  transform: translate(-50%, -8px);
+  transform: translate(-50%, -8px) translateY(0);
   box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo */
-.logo {
-  font-size: 24px;
-  color: #000;
-}
 
 /* Desktop Menu */
 .desktop-menu {
@@ -438,3 +442,6 @@ body {
 .mobile-contact-button:hover {
   background-color: #333;
 }
+
+
+
